@@ -1,75 +1,152 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link
-    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
-    rel="stylesheet"
-/>
-  <link rel="stylesheet" href="./CSS/style.css">
-  <title>Linkedin</title>
-</head>
-<body>
-  <header>
-    <div class="header__container container">
-      <div class="header__izquierdo">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./CSS/style.css" />
+    <title>Linkedin</title>
+  </head>
+  <body>
+    <header>
+      <div class="header__container container">
+        <div class="header__izquierdo">
           <a href="index.html" class="logo">
-            <img src="./Imagenes/Linkedin--Logo.png" alt="logo" class="logo__img">            
+            <img src="./Imagenes/linkedin.svg" alt="logo" class="logo__img" />
           </a>
           <form class="search">
             <i class="search__icon ri-search-line"></i>
-            <input class="search__input" type="text"
-            placeholder="Buscar">
+            <input class="search__input" type="text" placeholder="Buscar" />
           </form>
-      </div>
-      <div class="header__derecha">
-        <nav class="navegacion">
-          <ul class="navegacion__lista">
-            <li class="navegacion__item">
-              <a href="index.html" class="navegacion__link activar-link">
-                <i class="navegacion__icon ri-home-5-fill"></i>
-                <span class="navegacion__span">Inicio</span>
-              </a>
-            </li>
-            <li class="navegacion__item">
-              <a href="index.html" class="navegacion__link">
-                <i class="navegacion__icon ri-group-fill"></i>
-                <span class="navagacion__span">Mi red</span>
-              </a>
-            </li>
-            <li class="navegacion__item">
-              <a href="index.html" class="navegacion__link">
-                <i class="navegacion__icon ri-briefcase-5-fill"></i>
-                <span class="navegacion__span">Empleos</span>
-              </a>
-            </li>
-            <li class="navegacion__item">
-              <a href="index.html" class="navegacion__link">
-                <i class="navegacion__icon ri-chat-4-fill"></i>
-                <span class="navegacion__span">Mensajes</span>
-              </a>
-            </li>
-            <li class="navegacion__item">
-              <a href="index.html" class="navegacion__link">
-                <i class="navegacion__icon ri-notification-4-fill"></i>
-                <span class="navegacion__span">Notificaciones</span>
-              </a>
-            </li>
-          </ul>
-          <div class="perfil">
-            <div class="online">
-              <img src="./Imagenes/Foto__perfil.jpg" alt="Usuario" class="navegacion__perfil">
+        </div>
+        <div class="header__derecha">
+          <nav class="navegacion">
+            <ul class="navegacion__lista">
+              <li class="navegacion__item">
+                <a href="index.html" class="navegacion__link activar-link">
+                  <i class="navegacion__icon ri-home-5-fill"></i>
+                  <span class="navegacion__span">Inicio</span>
+                </a>
+              </li>
+              <li class="navegacion__item">
+                <a href="index.html" class="navegacion__link">
+                  <i class="navegacion__icon ri-group-fill"></i>
+                  <span class="navagacion__span">Mi red</span>
+                </a>
+              </li>
+              <li class="navegacion__item">
+                <a href="index.html" class="navegacion__link">
+                  <i class="navegacion__icon ri-briefcase-5-fill"></i>
+                  <span class="navegacion__span">Empleos</span>
+                </a>
+              </li>
+              <li class="navegacion__item">
+                <a href="index.html" class="navegacion__link">
+                  <i class="navegacion__icon ri-chat-4-fill"></i>
+                  <span class="navegacion__span">Mensajes</span>
+                </a>
+              </li>
+              <li class="navegacion__item">
+                <a href="index.html" class="navegacion__link">
+                  <i class="navegacion__icon ri-notification-4-fill"></i>
+                  <span class="navegacion__span">Notificaciones</span>
+                </a>
+              </li>
+            </ul>
+            <div class="perfil">
+              <div class="online">
+                <img
+                  src="./Imagenes/Foto__perfil.jpg"
+                  alt="Usuario"
+                  class="navegacion__perfil"
+                />
+                <!-- open-menu -->
+              </div>
+              <div class="perfil-menu-wrap" id="PerfilMenu">
+                <div class="perfil-menu">
+                  <div class="usuario-info">
+                    <img src="./Imagenes/Foto__perfil.jpg" />
+                    <div>
+                      <h3>Juan Vasquez</h3>
+                      <!-- perfil.html -->
+                      <a href="Perfil.html">Tu perfil</a>
+                    </div>
+                  </div>
+                  <hr />
+                  <a href="#" class="perfil-menu-link">
+                    <img src="./Imagenes/feedback.png" />
+                    <p>Give Feebdack</p>
+                    <span>></span>
+                  </a>
+                  <a href="#" class="perfil-menu-link">
+                    <img src="./Imagenes/setting.png" />
+                    <p>Setting & Privacy</p>
+                    <span>></span>
+                  </a>
+                  <a href="#" class="perfil-menu-link">
+                    <img src="./Imagenes/help.png" />
+                    <p>Help & Support</p>
+                    <span>></span>
+                  </a>
+                  <a href="#" class="perfil-menu-link">
+                    <img src="./Imagenes/display.png" />
+                    <p>Display & Accessiblity</p>
+                    <span>></span>
+                  </a>
+                  <a href="#" class="perfil-menu-link">
+                    <img src="./Imagenes/logout.png" />
+                    <p>Logout</p>
+                    <span>></span>
+                  </a>
+                </div>
+              </div>
             </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <div class="content-layout container">
+      <aside class="sidebar">
+        <div class="sidebar-perfil-box">
+          <img
+            src="./Imagenes/portrait-indigenous-person-integrated-into-modern-life.jpg"
+            width="100%"
+          />
+          <div class="sidebar-perfil-info">
+            <img src="./Imagenes/Foto__perfil.jpg" />
+            <h1>Juan Vasquez</h1>
+            <h3>Web Developer</h3>
+            <ul>
+              <li>Tus visitas al perfil <span>100</span></li>
+              <li>Tus visualizaciones de publicaciones <span>200</span></li>
+              <li>Tus conexiones <span>300</span></li>
+            </ul>
           </div>
-        </nav>
-      </div>      
+          <div class="sidebar-perfil-link">
+            <a href="#"><img src="./Imagenes/items.png" />Mis items</a>
+            <a href="#"
+              ><img src="./Imagenes/premium.png" />Prueba el Premium</a
+            >
+          </div>
+        </div>
 
+        <div class="sidebar-activity">
+          <h3>Reciente</h3>
+          <a href="#"><i class="ri-time-line"></i>Web Developer</a>
+          <a href="#"><i class="ri-time-line"></i>Interfax de usuario</a>
+          <a href="#"><i class="ri-time-line"></i>Aprendizaje en linea</a>
+          <a href="#"><i class="ri-time-line"></i>Aprende en linea</a>
+          <a href="#"><i class="ri-time-line"></i>Codifica Mejor</a>
+          <a href="#"><i class="ri-time-line"></i>Aprendizaje en grupo</a>
+
+          <h3>Grupos</h3>
+          <a href="#"><i class="ri-group-3-line"></i>Web Desing Groups</a>
+        </div>
+      </aside>
     </div>
-  </header>
-
-
-
-</body>
+  </body>
 </html>

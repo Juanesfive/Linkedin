@@ -1,7 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Poppins", "sans-serif";
 }
 
 body {
@@ -45,18 +48,15 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  
 }
 
 .container {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   max-width: 100%;
   width: 100%;
   margin: auto;
   padding: 0 10px;
 }
-
-
 
 .header__izquierdo {
   display: flex;
@@ -153,7 +153,7 @@ a {
 
 .navegacion__link:hover::after,
 .navegacion__link.activar-link::after {
-  width: 100%;  
+  width: 100%;
 }
 
 .online {
@@ -176,3 +176,81 @@ a {
   position: relative;
 }
 
+.navegacion__perfil {
+  width: 30px;
+  border-radius: 50%;
+  display: block;
+  cursor: pointer;
+  position: relative;
+}
+
+/* perfil drop down menu */
+
+.perfil-menu-wrap {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: 320px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s;
+}
+
+.perfil-menu-wrap.open-menu {
+  max-height: 350px;
+}
+
+.perfil-menu {
+  background-color: #222;
+  color: #fff;
+  padding: 20px;
+  margin: 10px;
+}
+
+.usuario-info {
+  display: flex;
+  align-items: center;
+}
+
+.usuario-info img {
+  width: 50px;
+  border-radius: 50px;
+  margin-right: 20px;
+}
+
+.usuario-info h3 {
+  font-weight: 500;
+  margin-bottom: 1px;
+}
+
+.usuario-info a {
+  text-align: center;
+  color: #c9dbf8;
+  font-size: 13px;
+}
+
+.perfil-menu hr {
+  border: 0;
+  height: 1px;
+  width: 100%;
+  background-color: #fff;
+  margin: 15px 0 10px;
+}
+
+.perfil-menu-link {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  margin: 12px 0;
+  font-size: 14px;
+}
+
+.perfil-menu-link p {
+  width: 100%;
+}
+
+.perfil-menu-link img {
+  width: 35px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
