@@ -254,3 +254,132 @@ a {
   border-radius: 50%;
   margin-right: 15px;
 }
+
+/* sidebar izquierdo */
+
+.sidebar {
+  grid-area: sidebar;
+}
+
+.sticky {
+  position: sticky;
+  top: 73px;
+}
+
+.sidebar-perfil-box {
+  background-color: #fff;
+}
+
+.sidebar-perfil-info {
+  padding: 0 25px;
+}
+
+.sidebar-perfil-info img {
+  width: 90px;
+  border-radius: 50%;
+  background-color: #fff;
+  padding: 4px;
+  margin-top: -45px;
+}
+
+.sidebar-perfil-info h1 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #222;
+}
+
+.sidebar-perfil-info h3 {
+  font-size: 14px;
+  font-weight: 500;
+  color: #777;
+}
+
+.sidebar-perfil-info ul {
+  list-style: none;
+  margin: 20px 0;
+}
+
+.sidebar-perfil-info ul li {
+  width: 100%;
+  margin: 5px 0;
+  font-size: 13px;
+}
+
+.sidebar-perfil-info ul li span {
+  float: right;
+  color: #2874b1;
+}
+
+.sidebar-perfil-link {
+  display: flex;
+  align-items: center;
+  border-top: 1px solid #ccc;
+}
+
+.sidebar-perfil-link a {
+  display: flex;
+  flex-basis: 50%;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 0;
+  font-size: 13px;
+  border-left: 1px solid #ccc;
+}
+
+.sidebar-perfil-link a:first-child {
+  border-left: 0;
+}
+
+.sidebar-perfil-link a img {
+  width: 20px;
+  margin-right: 10px;
+}
+
+.sidebar-activity {
+  background-color: #fff;
+  padding: 5px 25px;
+  margin: 12px 0;
+}
+
+.sidebar-activity h3 {
+  color: #777;
+  font-size: 14px;
+  font-weight: 500;
+  margin: 20px 0 10px;
+}
+
+.sidebar-activity a {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  font-weight: 500;
+  color: #888;
+  margin: 4px 0;
+  padding: 4px 2px;
+  transition: 0.5s;
+}
+
+.sidebar-activity a:hover {
+  background-color: #edf3f8;
+}
+
+.sidebar-activity a i {
+  font-size: 1.2rem;
+  margin-right: 10px;
+  font-weight: 600;
+  color: #2874b1;
+}
+
+.discover-more-link {
+  border-top: 1px solid #ccc;
+  text-align: center;
+  margin-top: 20px;
+  margin-left: -25px;
+  margin-right: -25px;
+}
+
+.discover-more-link a {
+  color: #2874b1;
+  display: inline-block;
+  margin: 10px 0;
+}
