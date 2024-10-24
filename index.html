@@ -58,28 +58,32 @@
               </li>
             </ul>
             <div class="perfil">
-              <div class="online">
+              <input
+                type="checkbox"
+                id="togglePerfilMenu"
+                class="toggle-input"
+              />
+              <label for="togglePerfilMenu" class="online">
                 <img
                   src="./Imagenes/Foto__perfil.jpg"
                   alt="Usuario"
                   class="navegacion__perfil"
                 />
-                <!-- open-menu -->
-              </div>
+              </label>
+
               <div class="perfil-menu-wrap" id="PerfilMenu">
                 <div class="perfil-menu">
                   <div class="usuario-info">
                     <img src="./Imagenes/Foto__perfil.jpg" />
                     <div>
                       <h3>Juan Vasquez</h3>
-                      <!-- perfil.html -->
                       <a href="Perfil.html">Tu perfil</a>
                     </div>
                   </div>
                   <hr />
                   <a href="#" class="perfil-menu-link">
                     <img src="./Imagenes/feedback.png" />
-                    <p>Give Feebdack</p>
+                    <p>Give Feedback</p>
                     <span>></span>
                   </a>
                   <a href="#" class="perfil-menu-link">
@@ -94,7 +98,7 @@
                   </a>
                   <a href="#" class="perfil-menu-link">
                     <img src="./Imagenes/display.png" />
-                    <p>Display & Accessiblity</p>
+                    <p>Display & Accessibility</p>
                     <span>></span>
                   </a>
                   <a href="#" class="perfil-menu-link">
@@ -112,10 +116,7 @@
     <div class="content-layout container">
       <aside class="sidebar">
         <div class="sidebar-perfil-box">
-          <img
-            src="./Imagenes/portrait-indigenous-person-integrated-into-modern-life.jpg"
-            width="15%"
-          />
+          <img src="./Imagenes/cover-pic.png" width="15%" />
           <div class="sidebar-perfil-info">
             <img src="./Imagenes/Foto__perfil.jpg" />
             <h1>Juan Vasquez</h1>
@@ -146,7 +147,9 @@
           <h3>Grupos</h3>
           <a href="#"><i class="ri-group-3-line"></i>Web Desing Groups</a>
           <a href="#"><i class="ri-group-3-line"></i>HTML Y CSS Learners</a>
-          <a href="#"><i class="ri-group-3-line"></i>Python Y JavaScript Group</a>
+          <a href="#"
+            ><i class="ri-group-3-line"></i>Python Y JavaScript Group</a
+          >
           <a href="#"><i class="ri-group-3-line"></i>Learn Coding Online</a>
           <h3>HASHTAG</h3>
           <a href="#"><i class="ri-hashtag"></i>webdevelopment</a>
@@ -159,6 +162,284 @@
       </aside>
 
       <!-- Contenido main -->
+
+      <main class="main">
+        <div class="create-post">
+          <div class="create-post-input">
+            <img src="./Imagenes/Foto__perfil.jpg" />
+            <textarea rows="2" placeholder="Write a post"></textarea>
+          </div>
+          <div class="create-post-links">
+            <li>
+              <a href="#">
+                <i class="ri-camera-3-line"></i>
+                <span>Photo</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="ri-video-on-line"></i>
+                <span>Video</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="ri-shadow-line"></i>
+                <span>Event</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">Post</a>
+            </li>
+          </div>
+        </div>
+
+        <div class="short-by">
+          <hr />
+          <p>
+            Short by: <span>top <img src="./Imagenes/Flecha-abajo.png" /></span>
+          </p>
+        </div>
+
+        <div class="post">
+          <div class="posts-author">
+            <img src="./Imagenes/foto3.jpg" />
+            <div>
+              <h1>Banjamin Leo</h1>
+              <small>Founder and CEO at Gallelio Gruop | Angel Inversor</small>
+              <small>2 Hours ago</small>
+            </div>
+          </div>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos,
+            facere? Architecto totam beatae debitis officia incidunt accusantium
+            doloribus facilis quos, obcaecati porro quas, corrupti quo fuga
+            ducimus rerum maiores quisquam.
+          </p>
+          <img
+            src="./Imagenes/young-business-people-office-working-with-tablet.jpg"
+            width="100%"
+          />
+
+          <div class="post-stats">
+            <div>
+              <div class="post-stats-info">
+                <img src="./Imagenes/hand_14873865.png" />
+                <img src="./Imagenes/heart_12000677.png" />
+                <img src="./Imagenes/volunteering_8585699.png" />
+              </div>
+              <span class="liked-users">Abhinav mishra and 75 others</span>
+            </div>
+            <div>
+              <span>22 comments &middot; 40 shares</span>
+            </div>
+          </div>
+          <div class="post-activity">
+            <div>
+              <img
+                src="./Imagenes/Foto__perfil.jpg"
+                class="post-activity-user-icon"
+              />
+              <img
+                src="./Imagenes/Flecha-abajo.png"
+                class="post-activity-arrow-icon"
+              />
+            </div>
+            <div class="post-activity-link">
+              <img src="./Imagenes/hand_14873865.png" />
+              <span>Like</span>
+            </div>
+            <div class="post-activity-link">
+              <img src="./Imagenes/speech-bubble_10904351.png" />
+              <span>Commenst</span>
+            </div>
+            <div class="post-activity-link">
+              <img src="./Imagenes/share_10976922.png" />
+              <span>Share</span>
+            </div>
+            <div class="post-activity-link">
+              <img src="./Imagenes/send_2099122.png" />
+              <span>Send</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="post">
+          <div class="posts-author">
+            <img src="./Imagenes/brunette-girl-posing.jpg" />
+            <div>
+              <h1>Clarence George</h1>
+              <small>Founder and CEO at Gallelio Gruop | Angel Inversor</small>
+              <small>2 Hours ago</small>
+            </div>
+          </div>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit, est
+            possimus enim saepe exercitationem suscipit tempora iste pariatur
+            eos ratione. Sed iure reprehenderit fugiat quasi nihil, distinctio
+            animi aspernatur laboriosam.
+          </p>
+          <img src="./Imagenes/1110.jpg" width="100%" />
+
+          <div class="post-stats">
+            <div>
+              <div class="post-stats-info">
+                <img src="./Imagenes/hand_14873865.png" />
+                <img src="./Imagenes/heart_12000677.png" />
+                <img src="./Imagenes/volunteering_8585699.png" />
+              </div>
+              <span class="liked-users">Abhinav mishra and 75 others</span>
+            </div>
+            <div>
+              <span>22 comments &middot; 40 shares</span>
+            </div>
+          </div>
+          <div class="post-activity">
+            <div>
+              <img
+                src="./Imagenes/Foto__perfil.jpg"
+                class="post-activity-user-icon"
+              />
+              <img
+                src="./Imagenes/Flecha-abajo.png"
+                class="post-activity-arrow-icon"
+              />
+            </div>
+            <div class="post-activity-link">
+              <img src="./Imagenes/hand_14873865.png" />
+              <span>Like</span>
+            </div>
+            <div class="post-activity-link">
+              <img src="./Imagenes/speech-bubble_10904351.png" />
+              <span>Commenst</span>
+            </div>
+            <div class="post-activity-link">
+              <img src="./Imagenes/share_10976922.png" />
+              <span>Share</span>
+            </div>
+            <div class="post-activity-link">
+              <img src="./Imagenes/send_2099122.png" />
+              <span>Send</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="post">
+          <div class="posts-author">
+            <img src="./Imagenes/worldface-spanish-guy-white-background.jpg" />
+            <div>
+              <h1>Santamaria</h1>
+              <small>Founder and CEO at Gallelio Gruop | Angel Inversor</small>
+              <small>2 Hours ago</small>
+            </div>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste
+            possimus corporis impedit nisi minus odio illo ea quidem fuga
+            praesentium reiciendis delectus, non, itaque molestias aliquam
+            distinctio enim harum excepturi consequatur eos temporibus? Esse,
+            repellendus fugiat. Aliquam, eos. Fugiat natus doloribus, mollitia
+            odio distinctio nobis sit doloremque numquam veniam iusto.
+          </p>
+          <img
+            src="./Imagenes/diverse-young-people-being-digital-nomads-working-remotely-from-dreamy-locations.jpg"
+            width="100%"
+          />
+
+          <div class="post-stats">
+            <div>
+              <div class="post-stats-info">
+                <img src="./Imagenes/hand_14873865.png" />
+                <img src="./Imagenes/heart_12000677.png" />
+                <img src="./Imagenes/volunteering_8585699.png" />
+              </div>
+              <span class="liked-users">Abhinav mishra and 75 others</span>
+            </div>
+            <div>
+              <span>22 comments &middot; 40 shares</span>
+            </div>
+          </div>
+          <div class="post-activity">
+            <div>
+              <img
+                src="./Imagenes/Foto__perfil.jpg"
+                class="post-activity-user-icon"
+              />
+              <img
+                src="./Imagenes/Flecha-abajo.png"
+                class="post-activity-arrow-icon"
+              />
+            </div>
+            <div class="post-activity-link">
+              <img src="./Imagenes/hand_14873865.png" />
+              <span>Like</span>
+            </div>
+            <div class="post-activity-link">
+              <img src="./Imagenes/speech-bubble_10904351.png" />
+              <span>Commenst</span>
+            </div>
+            <div class="post-activity-link">
+              <img src="./Imagenes/share_10976922.png" />
+              <span>Share</span>
+            </div>
+            <div class="post-activity-link">
+              <img src="./Imagenes/send_2099122.png" />
+              <span>Send</span>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <!-- Rigth Sidebar -->
+      <aside class="aside">
+        <div class="sidebar-news">
+          <img src="./Imagenes/exclamacion.png" class="info-icon" />
+          <h3>Trending News</h3>
+          <a href="#">High demand for skilled manpower</a>
+          <span>1d ago &middot; 10,934 readers</span>
+
+          <a href="#">Careers growing horizontally too</a>
+          <span>1d ago &middot; 10,532 readers</span>
+
+          <a href="#">Lees work visa for US, more for UK</a>
+          <span>1d ago &middot; 10,451 readers</span>
+
+          <a href="#">More hiring = higrher confidence?</a>
+          <span>1d ago &middot; 10,122 readers</span>
+
+          <a href="#">Gautam Adani is the word´s third richest</a>
+          <span>1d ago &middot; 10,011 readers</span>
+
+          <a href="#" class="read-more-link">Read more</a>
+        </div>
+
+        <div class="sticky">
+          <div class="sidebra-ad">
+            <small>Ad &middot; &middot; &middot;</small>
+            <p>Master teh 5 principles of web desing</p>
+            <div>
+              <img src="./Imagenes/Foto__perfil.jpg" />
+              <img src="./Imagenes/882720.png" />
+            </div>
+            <b>Brand and Demand in Xiaomi</b>
+            <a href="#" class="ad-link">Learn more</a>
+          </div>
+
+          <div class="sidebar-userful-links">
+            <a href="#">About</a>
+            <a href="#">Accessiblity</a>
+            <a href="#">Help Center</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Advertising</a>
+            <a href="#">Get the App</a>
+            <a href="#">More</a>
+            <div class="copyright-msg">
+              <img src="./Imagenes/linkedin.svg" />
+              <p>Linkedup &#169; 2022. All right reserved</p>
+            </div>
+          </div>
+        </div>
+      </aside>
     </div>
   </body>
 </html>
