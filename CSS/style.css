@@ -14,15 +14,7 @@ body {
   flex-direction: column;
 }
 
-/* body {
-  background-color: #f4f2ee;
-  color: #5f5f5f;
-  display: grid;
-  grid-template-rows: auto 1fr auto;
-  grid-template-columns: 1fr;
-  min-height: 100vh;
-  gap: 1rem;
-} */
+
 
 a {
   text-decoration: none;
@@ -31,17 +23,7 @@ a {
 
 /* layaout perfil */
 
-/* .content-perfil {
-  display: grid;
-  grid-template-rows: auto;
-  grid-template-columns: 1fr 280px;
-  grid-template-areas:
-    "perfil-main perfil-sidebar"
-    "perfil-footer perfil-footer";
-  gap: 1rem;
-  height: 100vh;
-  padding-top: calc(57px + 25px);
-} */
+
 
 .header {
   grid-area: header;
@@ -52,21 +34,19 @@ a {
   z-index: 100;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
   position: fixed;
+  justify-items: center;
 }
 
 .header__container {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  max-width: 1200px;
+  width: 100%;
+  justify-content: space-between;
 }
 
-.container {
-  background-color: #ffffff;
-  max-width: 100%;
-  width: 100%;
-  margin: auto;
-  padding: 0 10px;
-}
+
 
 .header__izquierdo {
   display: flex;
@@ -328,6 +308,7 @@ a {
   display: flex;
   align-items: center;
   border-top: 1px solid #ccc;
+  align-content: center;
 }
 
 .sidebar-perfil-link a {
@@ -406,27 +387,17 @@ a {
   display: grid;
   grid-template-areas: 'sidebar-Izquierda main asidebar-derecha';
   grid-template-columns: 280px 1fr 280px;
-  height: 500vh;
+  height: 200vh;
   gap: 16px;
-  padding-top: calc(57px + 25px);
+  padding-top: calc(52px + 25px);
   max-width: 1200px;
   width: 100%;
   margin: auto;
-  padding: auto;
+  /* padding: auto; */
+  
 
 }
 
-/*
---------------------
-left sidebar end
---------------------
-*/
-
-/*
---------------------
-Main start
---------------------
-*/
 .main {
   grid-area: main;
 }
@@ -628,20 +599,8 @@ Main start
   margin-right: 8px;
 }
 
-/*
---------------------
-Main end
---------------------
-*/
-
-/*
----------------------
-Rigth sidebar start
----------------------
-*/
 .aside {
   grid-area: aside;
-  
 }
 
 .sidebar-Noticias {
@@ -745,253 +704,11 @@ Rigth sidebar start
   margin-right: 4px;
 }
 
-/*
----------------------
-Rigth sidebar end
----------------------
-*/
 
-/*
---------------------
-Profile
---------------------
-*/
-.profile-container {
-  background-color: #fff;
-}
 
-.profile-container-inner {
-  padding: 0 4% 10px;
-}
 
-.profile-pic {
-  width: 150px;
-  border-radius: 50%;
-  margin-top: -75px;
-  padding: 5px;
-  background-color: #fff;
-}
 
-.profile-container h1 {
-  font-size: 28px;
-  font-weight: 600;
-  color: #222;
-}
 
-.profile-container b {
-  font-weight: 500;
-}
 
-.profile-container p {
-  margin-top: 5px;
-}
 
-.profile-container p a {
-  color: #2874b1;
-}
 
-.mutual-connection {
-  display: flex;
-  align-items: center;
-  margin: 20px 0;
-}
-
-.mutual-connection img {
-  width: 30px;
-  border-radius: 50%;
-  margin-right: 5px;
-}
-
-.profile-btn {
-  margin: 20px 0;
-}
-
-.profile-btn a {
-  display: inline-flex;
-  align-items: center;
-  background-color: #e4e6eb;
-  padding: 6px 15px;
-  border-radius: 4px;
-  margin-right: 10px;
-}
-
-.profile-btn a img {
-  width: 18px;
-  margin-right: 5px;
-}
-
-.profile-btn .primary-btn {
-  background-color: #2874b1;
-  color: #fff;
-}
-
-.profile-description {
-  background-color: #fff;
-  padding: 20px 4% 30px;
-  margin: 12px 0;
-}
-
-.profile-description h2 {
-  color: #333;
-  margin: 10px 0 20px;
-}
-
-.see-more-link {
-  display: block;
-  text-align: right;
-  font-size: 15px;
-}
-
-.profile-desc-row {
-  display: flex;
-  align-items: flex-start;
-  margin: 20px 0;
-}
-
-.profile-desc-row img {
-  width: 50px;
-  margin-right: 25px;
-  margin-top: 5px;
-}
-
-.profile-desc-row div {
-  width: 100%;
-}
-
-.profile-desc-row h3 {
-  font-size: 18px;
-  font-weight: 600;
-  color: #333;
-}
-
-.profile-desc-row b {
-  display: block;
-  font-weight: 500;
-  font-size: 15px;
-}
-
-.profile-desc-row p {
-  margin-top: 15px;
-}
-
-.profile-desc-row hr {
-  border: 0;
-  border-bottom: 1px solid #999;
-  margin-top: 10px;
-}
-
-.experience-link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding-top: 20px;
-  font-weight: 500;
-}
-
-.experience-link img {
-  width: 20px;
-  margin-left: 8px;
-}
-
-.skills-btn {
-  display: inline-block;
-  margin: 10px 5px;
-  padding: 6px 18px;
-  border: 1px solid #777;
-  border-radius: 30px;
-  font-size: 12px;
-  font-weight: 500;
-}
-
-.language-btn {
-  display: inline-block;
-  margin: 10px 5px;
-  padding: 6px 18px;
-  background-color: #e4e6eb;
-  font-size: 12px;
-  font-weight: 500;
-}
-
-/*
-----------------------
-Profile sidebar
-----------------------
-*/
-.profile-sidebar .sidebra-anuncio {
-  margin: 0;
-}
-
-.sidebar-people {
-  background-color: #fff;
-  padding: 15px 25px;
-  margin: 12px 0;
-  font-size: 12px;
-}
-
-.sidebar-people h3 {
-  font-size: 16px;
-  font-weight: 600;
-  margin: 10px 0 20px;
-}
-
-.sidebar-people-row {
-  display: flex;
-  align-items: flex-start;
-  margin: 6px 0;
-}
-
-.sidebar-people-row img {
-  width: 40px;
-  border-radius: 50%;
-  margin-right: 8px;
-  margin-top: 5px;
-}
-
-.sidebar-people-row h2 {
-  font-weight: 500;
-  font-size: 16px;
-}
-
-.sidebar-people-row a {
-  display: inline-block;
-  margin: 10px 0;
-  padding: 5px 25px;
-  border: 1px solid #5f5f5f;
-  border-radius: 30px;
-  font-weight: 500;
-}
-
-.profile-footer {
-  grid-area: profile-footer;
-}
-
-@media (width < 770px) {
-  .Buscador {
-    background-color: transparent;
-    width: auto;
-    padding: 0;
-  }
-
-  .Buscador__input {
-    width: 0;
-    padding: 0;
-  }
-
-  .navigation__link {
-    min-width: 45px;
-  }
-
-  .navigation__span {
-    display: none;
-  }
-
-  
-
-  .post-actividad-link {
-    flex-direction: column;
-  }
-
-  .post-actividad-link img{
-    margin-right: 0;
-  }
-}
